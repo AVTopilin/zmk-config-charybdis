@@ -196,7 +196,7 @@
     &kp LSFT      &hml LGUI Z   &hml LALT X   &hml LCTRL C  &hml LSHIFT V &kp B             &kp N         &hmr RSHIFT M &hmr RCTRL COMMA &hmr RALT DOT &hmr RGUI FSLH &kp RET
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //               ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────╮
-                  &lalt_dt      &mo LOWER     &mo POINTER   &gui_ctrlb    &kp LCTRL         &kp DEL       &blt SYMBOLS RBRC  &blt RAISE SPACE   
+                  &lalt_dt      &mo LOWER     &gui_ctrlb    &mo POINTER   &kp LCTRL         &kp DEL       &blt SYMBOLS RBRC  &blt RAISE SPACE   
 //               ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
