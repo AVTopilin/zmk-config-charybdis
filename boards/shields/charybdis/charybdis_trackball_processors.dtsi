@@ -20,6 +20,11 @@
 // turns itself off again.
 #define POINTER_TEMP_LAYER_TIMEOUT_MS 5000
 
+// Minimum time in milliseconds that must pass after the last key press before a
+// trackball movement is allowed to auto-enable the POINTER layer. This prevents
+// accidental trackball touches while typing from triggering the auto layer.
+#define POINTER_PRIOR_IDLE_MS 2000
+
 // Standard trackball processing configuration
 // Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
@@ -37,4 +42,11 @@
         layers = <BASE POINTER>; \
         input-processors = <&zip_temp_layer POINTER POINTER_TEMP_LAYER_TIMEOUT_MS>, <&zip_xy_scaler 3 2>; \
     };
+
+// Configure the shared temp-layer input processor: do not auto-enable the
+// POINTER layer from trackball movement if a key has been pressed within the
+// last POINTER_PRIOR_IDLE_MS milliseconds (typing guard).
+&zip_temp_layer {
+    require-prior-idle-ms = <POINTER_PRIOR_IDLE_MS>;
+};
 

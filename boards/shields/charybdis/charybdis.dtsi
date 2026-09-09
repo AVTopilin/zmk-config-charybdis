@@ -108,15 +108,15 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8) RC(3,9)
             // Right thumb bindings: 53=RET, 54=SYMBOLS, 55=RAISE
             // Physical coordinates per actual key positions from keymap comments
             //                       w   h    x    y     rot    rx    ry
-            , <&key_physical_attrs 100 100  348  414     900   398   790>  // 48 (LALT) - physical: 3rd from left
-            , <&key_physical_attrs 100 100  418  414    1500   398   790>  // 49 (LOWER) - physical: 5th from left
-            , <&key_physical_attrs 100 100  518  420    1500   398   790>  // 50 (gui_ctrlb) - physical: 1st from left
-            , <&key_physical_attrs 100 100  418  514    1500   398   790>  // 51 (POINTER) - physical: 2nd from left
-            , <&key_physical_attrs 100 100  518  520    1500   398   790>  // 52 (LCTRL) - physical: 4th from left
+            , <&key_physical_attrs 100 100  348  414       0     0     0>  // 48 (LALT) - physical: 3rd from left
+            , <&key_physical_attrs 100 100  448  414       0     0     0>  // 49 (LOWER) - physical: 5th from left
+            , <&key_physical_attrs 100 100  548  420       0     0     0>  // 50 (gui_ctrlb) - physical: 1st from left
+            , <&key_physical_attrs 100 100  448  514       0     0     0>  // 51 (POINTER) - physical: 2nd from left
+            , <&key_physical_attrs 100 100  548  520       0     0     0>  // 52 (LCTRL) - physical: 4th from left
 			      // Right
-            , <&key_physical_attrs 100 100 1000  520 (-3000)  1102   790>  // 53 (DEL) - physical: 3rd from right (bottom)
-            , <&key_physical_attrs 100 100 1000  420 (-3000)  1102   790>  // 54 (SYMBOLS) - physical: 1st from right (top)
-            , <&key_physical_attrs 100 100 1030  414 (-1500)  1102   790>  // 55 (RAISE) - physical: 2nd from right (top)
+            , <&key_physical_attrs 100 100 1000  520       0     0     0>  // 53 (DEL) - physical: 3rd from right (bottom)
+            , <&key_physical_attrs 100 100 1000  420       0     0     0>  // 54 (SYMBOLS) - physical: 1st from right (top)
+            , <&key_physical_attrs 100 100 1100  414       0     0     0>  // 55 (RAISE) - physical: 2nd from right (top)
             ;
     };
 
