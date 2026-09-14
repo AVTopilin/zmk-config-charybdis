@@ -18,12 +18,12 @@
 // trackball movement, when it was auto-enabled by the temp-layer input processor.
 // Tune this value to change how long you have to click/scroll before the layer
 // turns itself off again.
-#define POINTER_TEMP_LAYER_TIMEOUT_MS 5000
+#define POINTER_TEMP_LAYER_TIMEOUT_MS 2000
 
 // Minimum time in milliseconds that must pass after the last key press before a
 // trackball movement is allowed to auto-enable the POINTER layer. This prevents
 // accidental trackball touches while typing from triggering the auto layer.
-#define POINTER_PRIOR_IDLE_MS 2000
+#define POINTER_PRIOR_IDLE_MS 1000
 
 // Standard trackball processing configuration
 // Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
