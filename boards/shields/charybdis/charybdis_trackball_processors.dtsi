@@ -41,13 +41,5 @@
     move { \
         layers = <BASE POINTER>; \
         input-processors = <&zip_xy_scaler 3 2>; \
-        // input-processors = <&zip_temp_layer POINTER POINTER_TEMP_LAYER_TIMEOUT_MS>, <&zip_xy_scaler 3 2>; \
     };
-
-// Configure the shared temp-layer input processor: do not auto-enable the
-// POINTER layer from trackball movement if a key has been pressed within the
-// last POINTER_PRIOR_IDLE_MS milliseconds (typing guard).
-// &zip_temp_layer {
-//    require-prior-idle-ms = <POINTER_PRIOR_IDLE_MS>;
-// };
 
